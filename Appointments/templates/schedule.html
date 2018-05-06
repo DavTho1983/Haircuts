@@ -1,0 +1,8 @@
+<h1>Schedule</h1>
+
+<ul>
+  {% for barb in barber %}
+    <a href="{% url 'appointments' barb.id %}">
+    <li> {{ barb.name }} {{ barb.location }} </li>
+  {% endfor %}
+</ul>
